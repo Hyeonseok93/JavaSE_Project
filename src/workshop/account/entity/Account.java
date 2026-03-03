@@ -1,6 +1,8 @@
 package workshop.account.entity;
 
-public class Account {
+import workshop.account.exception.InsufficientBalanceException;
+
+public class Account extends Object {
 	private String custId;
 	private String acctId;
 	private int balance;
@@ -47,11 +49,24 @@ public class Account {
 	}
 	
 	// 출금
-	public void withdraw(int amount) {
+	// AccountTest 에서 try/catch를 하도록 위임하는 것임
+	public void withdraw(int amount) throws InsufficientBalanceException {
 		if(amount > balance) {
-			System.out.println("잔액 부족");
-			return;
+			// Exception을 강제로 발생시킴
+			throw new InsufficientBalanceException("잔액이 부족합니다. 현재잔액은 = ", balance);
 		}
 		this.balance -= amount;
 	}
+	
+	// 메서드 재정의 (Overriding)
+	// 부모 클래스의 메서드 선언은 반드시 같아야 하고, 구현만 다름
+	/* @Override 어노테이션
+	 *  - @Target(ElementType.METHOD) 메서드 위에 선언하는 어노테이션
+	 *  - @Retention(RetentionPolicy.SOURCE) 컴파일 타임에 동작하는 어노테이션 
+	 * */
+	@Override
+	public String toString() {
+		return "Account [고객 번호 = " + custId + ", 계좌 번호 = " + acctId + ", 잔액 = " + balance + "]";
+	}
+	
 }
