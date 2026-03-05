@@ -1,6 +1,8 @@
-package workshop.book.entity;
+﻿package workshop.book.entity;
 
+//참조서 
 public class ReferenceBook extends Publication {
+	//상속받은 속성이 아니라 ReferenceBook이 가지는 독자적인 속성임
 	private String field;
 	
 	public ReferenceBook() {

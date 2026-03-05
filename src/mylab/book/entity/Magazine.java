@@ -1,4 +1,4 @@
-package mylab.book.entity;
+ï»¿package mylab.book.entity;
 
 public class Magazine extends Publication {
     private String publishPeriod;
@@ -10,7 +10,7 @@ public class Magazine extends Publication {
 
     @Override
     public String toString() {
-        return super.toString() + " [ÀâÁö] ¹ßÇàÁÖ±â: " + publishPeriod + ", " 
-                + getPage() + "ÂÊ, " + getPrice() + "¿ø, ÃâÆÇÀÏ: " + getPublishDate();
+        return super.toString() + " [ì¡ì§€] ë°œí–‰ì£¼ê¸°: " + publishPeriod + ", " 
+                + getPage() + "ìª½, " + getPrice() + "ì›, ì¶œíŒì¼: " + getPublishDate();
     }
 }

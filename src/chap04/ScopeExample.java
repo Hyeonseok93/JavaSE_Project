@@ -1,4 +1,4 @@
-
+ï»¿
 package chap04;
 
 public class ScopeExample {
@@ -9,8 +9,8 @@ public class ScopeExample {
         int i = 4, j = 5; 
 
         this.i = i + j;
-        System.out.println( "firstMethod()ÀÇ ·ÎÄÃ º¯¼ö i ==> " + i );
-        System.out.println( "firstMethod()¿¡¼­ÀÇ this.i  ==> " + this.i );
+        System.out.println( "firstMethod()ì˜ ë¡œì»¬ ë³€ìˆ˜ i ==> " + i );
+        System.out.println( "firstMethod()ì—ì„œì˜ this.i  ==> " + this.i );
 
         secondMethod( 7 );
     }
@@ -20,7 +20,7 @@ public class ScopeExample {
         int j = 8;
 
         this.i = i + j;
-        System.out.println( "secondMethod()ÀÇ ·ÎÄÃ º¯¼ö i ==> " + i );
-        System.out.println( "secondMethod()¿¡¼­ÀÇ this.i  ==> " + this.i );
+        System.out.println( "secondMethod()ì˜ ë¡œì»¬ ë³€ìˆ˜ i ==> " + i );
+        System.out.println( "secondMethod()ì—ì„œì˜ this.i  ==> " + this.i );
     }
 }

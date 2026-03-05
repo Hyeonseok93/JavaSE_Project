@@ -1,4 +1,4 @@
-package jdbc;
+ï»¿package jdbc;
 
 import java.sql.*;
 
@@ -13,18 +13,18 @@ public class EmpList {
         ResultSet rset = null;
         String query = null;
 
-        // Driver µî·Ï
+        // Driver ë“±ë¡
         Class.forName( "oracle.jdbc.driver.OracleDriver" );
         //Class.forName( "org.gjt.mm.mysql.Driver" );
 
         // DB Connection
         conn = DriverManager.getConnection( url, "SE17###", "SE17###" );
 
-        // Statement »ı¼º
+        // Statement ìƒì„±
         stmt = conn.createStatement();
 
         String id = "10001";
-        // Query Àü¼Û ¹× °á°ú ¹Ş±â
+        // Query ì „ì†¡ ë° ê²°ê³¼ ë°›ê¸°
         query = "SELECT ID , " + 
                 "        LAST_NAME" + 
                 " FROM EMP " +

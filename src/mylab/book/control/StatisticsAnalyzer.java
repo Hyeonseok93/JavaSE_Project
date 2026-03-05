@@ -1,4 +1,4 @@
-package mylab.book.control;
+ï»¿package mylab.book.control;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -10,24 +10,24 @@ public class StatisticsAnalyzer {
     public void printStatistics(Publication[] publications) {
         DecimalFormat df = new DecimalFormat("#,###.##");
         
-        System.out.println("===== ÃâÆÇ¹° Åë°è ºĞ¼® =====");
+        System.out.println("===== ì¶œíŒë¬¼ í†µê³„ ë¶„ì„ =====");
         
-        System.out.println("1. Å¸ÀÔº° Æò±Õ °¡°İ:");
+        System.out.println("1. íƒ€ì…ë³„ í‰ê·  ê°€ê²©:");
         Map<String, Double> avgPrices = calculateAveragePriceByType(publications);
-        System.out.println("¼Ò¼³: " + df.format(avgPrices.getOrDefault("¼Ò¼³", 0.0)) + "¿ø");
-        System.out.println("Âü°í¼­: " + df.format(avgPrices.getOrDefault("Âü°í¼­", 0.0)) + "¿ø");
-        System.out.println("ÀâÁö: " + df.format(avgPrices.getOrDefault("ÀâÁö", 0.0)) + "¿ø");
-        System.out.println(); // 1¹ø°ú 2¹ø »çÀÌ ºó ÁÙ
+        System.out.println("ì†Œì„¤: " + df.format(avgPrices.getOrDefault("ì†Œì„¤", 0.0)) + "ì›");
+        System.out.println("ì°¸ê³ ì„œ: " + df.format(avgPrices.getOrDefault("ì°¸ê³ ì„œ", 0.0)) + "ì›");
+        System.out.println("ì¡ì§€: " + df.format(avgPrices.getOrDefault("ì¡ì§€", 0.0)) + "ì›");
+        System.out.println(); // 1ë²ˆê³¼ 2ë²ˆ ì‚¬ì´ ë¹ˆ ì¤„
 
-        System.out.println("2. ÃâÆÇ¹° À¯Çü ºĞÆ÷:");
+        System.out.println("2. ì¶œíŒë¬¼ ìœ í˜• ë¶„í¬:");
         Map<String, Double> distribution = calculatePublicationDistribution(publications);
-        System.out.println("¼Ò¼³: " + df.format(distribution.getOrDefault("¼Ò¼³", 0.0)) + "%");
-        System.out.println("Âü°í¼­: " + df.format(distribution.getOrDefault("Âü°í¼­", 0.0)) + "%");
-        System.out.println("ÀâÁö: " + df.format(distribution.getOrDefault("ÀâÁö", 0.0)) + "%");
-        System.out.println(); // 2¹ø°ú 3¹ø »çÀÌ ºó ÁÙ
+        System.out.println("ì†Œì„¤: " + df.format(distribution.getOrDefault("ì†Œì„¤", 0.0)) + "%");
+        System.out.println("ì°¸ê³ ì„œ: " + df.format(distribution.getOrDefault("ì°¸ê³ ì„œ", 0.0)) + "%");
+        System.out.println("ì¡ì§€: " + df.format(distribution.getOrDefault("ì¡ì§€", 0.0)) + "%");
+        System.out.println(); // 2ë²ˆê³¼ 3ë²ˆ ì‚¬ì´ ë¹ˆ ì¤„
 
         double ratio2007 = calculatePublicationRatioByYear(publications, "2007");
-        System.out.println("3. 2007³â¿¡ ÃâÆÇµÈ ÃâÆÇ¹° ºñÀ²: " + df.format(ratio2007) + "%");
+        System.out.println("3. 2007ë…„ì— ì¶œíŒëœ ì¶œíŒë¬¼ ë¹„ìœ¨: " + df.format(ratio2007) + "%");
     }
 
     private Map<String, Double> calculateAveragePriceByType(Publication[] publications) {
@@ -67,9 +67,9 @@ public class StatisticsAnalyzer {
     }
 
     private String getPublicationType(Publication pub) {
-        if (pub instanceof Novel) return "¼Ò¼³";
-        if (pub instanceof Magazine) return "ÀâÁö";
-        if (pub instanceof ReferenceBook) return "Âü°í¼­";
-        return "±âÅ¸";
+        if (pub instanceof Novel) return "ì†Œì„¤";
+        if (pub instanceof Magazine) return "ì¡ì§€";
+        if (pub instanceof ReferenceBook) return "ì°¸ê³ ì„œ";
+        return "ê¸°íƒ€";
     }
 }

@@ -1,4 +1,4 @@
-package chap10;
+ï»¿package chap10;
 
 import java.io.*;
 
@@ -8,17 +8,17 @@ public class WriteSerializeTest {
         FileOutputStream empOutputFile = null;
         ObjectOutputStream empOutputStream = null;
         
-        EmpInfo[] empList = {   new EmpInfo("11111" , "È«±æµ¿"),
-                                new EmpInfo("22222" , "°í±æµ¿"),
-                                new EmpInfo("33333" , "±è±æµ¿")
+        EmpInfo[] empList = {   new EmpInfo("11111" , "í™ê¸¸ë™"),
+                                new EmpInfo("22222" , "ê³ ê¸¸ë™"),
+                                new EmpInfo("33333" , "ê¹€ê¸¸ë™")
                             }; 
         try{ 
-            empOutputFile = new FileOutputStream( "C:/JAVA_DEV/file_test/data.ser"); // data.txtµµ °¡´É 
+            empOutputFile = new FileOutputStream( "C:/JAVA_DEV/file_test/data.ser"); // data.txtë„ ê°€ëŠ¥ 
             empOutputStream = new ObjectOutputStream(empOutputFile);
               
             empOutputStream.writeObject(empList);
  
-            //°´Ã¼¸¦ ÇÏ³ªÇÏ³ª write°¡´É 
+            //ê°ì²´ë¥¼ í•˜ë‚˜í•˜ë‚˜ writeê°€ëŠ¥ 
 /*            
             empOutputStream.writeObject(empList[0]);
             empOutputStream.writeObject(empList[1]);*/

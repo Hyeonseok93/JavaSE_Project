@@ -1,4 +1,4 @@
-package chap04;
+ï»¿package chap04;
    
 public class ShortCircuitEffect {
 
@@ -7,12 +7,12 @@ public class ShortCircuitEffect {
 		  int dividend = 100;
 		  /*
 		  if ( divisor != 0 & dividend/divisor > 10 ) {
-		      System.out.println( "¸òÀÌ 10º¸´Ù Å©´Ù." );
+		      System.out.println( "ëª«ì´ 10ë³´ë‹¤ í¬ë‹¤." );
 		  }*/
 
 		  
 		  if ( divisor != 0 && dividend/divisor > 10 ) {
-		      System.out.println( "¸òÀÌ 10º¸´Ù Å©´Ù." );
+		      System.out.println( "ëª«ì´ 10ë³´ë‹¤ í¬ë‹¤." );
 		  } 	   
 	}
 }

@@ -1,4 +1,4 @@
-package workshop.animal.entity;
+﻿package workshop.animal.entity;
 
 public interface Pet {
 	String getName();

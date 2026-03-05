@@ -1,4 +1,4 @@
-package chap04;
+ï»¿package chap04;
 
 public class PromotionTest {
 
@@ -6,10 +6,10 @@ public class PromotionTest {
 
 		long longVal = 99L;
 		//int intVal1 = longVal;    // compile error
-		int intVal2 = (int)longVal;  // Casting ÇßÀ¸¹Ç·Î OK (Á¤º¸µµ ÀÒÁö ¾ÊÀ½)
+		int intVal2 = (int)longVal;  // Casting í–ˆìœ¼ë¯€ë¡œ OK (ì •ë³´ë„ ìƒì§€ ì•ŠìŒ)
 		 
 	    int intVal = 128;
-	    byte byteVal = (byte)intVal; // byteVal¿¡ ÀúÀåµÉ °ª º¸Àå ¸øÇÔ
+	    byte byteVal = (byte)intVal; // byteValì— ì €ì¥ë  ê°’ ë³´ì¥ ëª»í•¨
 	    
 	    System.out.println( "intVal2 : " + intVal2 );	 
 	    System.out.println( "byteVal : " + byteVal );	    

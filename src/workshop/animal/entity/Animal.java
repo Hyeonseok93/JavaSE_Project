@@ -1,12 +1,8 @@
-package workshop.animal.entity;
+ï»¿package workshop.animal.entity;
 
 public abstract class Animal {
 	protected int legs;
-	
-	public Animal() {
 		
-	}
-	
 	protected Animal(int legs) {
 		this.legs = legs;
 	}
@@ -14,7 +10,7 @@ public abstract class Animal {
 	public abstract void eat();
 	
 	public void walk() {
-		System.out.println("µ¿¹°Àº "+ legs + "¹ß·Î °È´Â´Ù.");
+		System.out.println("ë™ë¬¼ì€ "+ legs + "ë°œë¡œ ê±·ëŠ”ë‹¤.");
 	}
 	
 }

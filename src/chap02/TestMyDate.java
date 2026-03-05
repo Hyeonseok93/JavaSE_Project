@@ -1,4 +1,4 @@
-package chap02;
+ï»¿package chap02;
 
 import chap02.MyDate;
 
@@ -15,9 +15,9 @@ public class TestMyDate{
 
         date.setYear( 2007 );
 
-        System.out.println( date.getYear() + "³â " + 
-	      					date.getMonth() + "¿ù " + 
-	      					date.getDay() + "ÀÏ ÀÔ´Ï´Ù." ) ;
+        System.out.println( date.getYear() + "ë…„ " + 
+	      					date.getMonth() + "ì›” " + 
+	      					date.getDay() + "ì¼ ì…ë‹ˆë‹¤." ) ;
 	      					
         */	  
 

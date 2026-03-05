@@ -1,4 +1,4 @@
-package chap05;
+﻿package chap05;
 
 public class TestPrimitiveArray {
 	public static void main( String[] args ) {

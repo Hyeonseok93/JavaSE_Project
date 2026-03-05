@@ -1,4 +1,4 @@
-package chap04;
+ï»¿package chap04;
 
 public class IfElseTest {
   
@@ -8,9 +8,9 @@ public class IfElseTest {
 
 		if ( i < 100 ){
             if ( i > 10 ){
-                System.out.println( "10º¸´Ù Å©°í 100º¸´Ù ÀÛ´Ù");
+                System.out.println( "10ë³´ë‹¤ í¬ê³  100ë³´ë‹¤ ì‘ë‹¤");
             }else{
-                System.out.println( "i´Â 100ÀÌ»óÀÌ´Ù.");
+                System.out.println( "iëŠ” 100ì´ìƒì´ë‹¤.");
             }
 		}
 	}

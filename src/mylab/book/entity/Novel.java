@@ -1,4 +1,4 @@
-package mylab.book.entity;
+ï»¿package mylab.book.entity;
 
 public class Novel extends Publication {
     private String author;
@@ -12,7 +12,7 @@ public class Novel extends Publication {
 
     @Override
     public String toString() {
-        return super.toString() + " [¼Ò¼³] ÀúÀÚ: " + author + ", Àå¸£: " + genre + ", " 
-                + getPage() + "ÂÊ, " + getPrice() + "¿ø, ÃâÆÇÀÏ: " + getPublishDate();
+        return super.toString() + " [ì†Œì„¤] ì €ì: " + author + ", ì¥ë¥´: " + genre + ", " 
+                + getPage() + "ìª½, " + getPrice() + "ì›, ì¶œíŒì¼: " + getPublishDate();
     }
 }

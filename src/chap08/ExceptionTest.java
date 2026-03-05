@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+ï»¿/*------------------------------------------------------------------------------
  * Name : ExceptionTest
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   º¯        °æ        »ç        Ç×
+ *                   ë³€        ê²½        ì‚¬        í•­
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 9. 7.  ±â¼ú´ëÇĞ¿ø  ver1.0 ÀÛ¼º
+ * 2006. 9. 7.  ê¸°ìˆ ëŒ€í•™ì›  ver1.0 ì‘ì„±
  *----------------------------------------------------------------------------*/
 
 package chap08;
@@ -17,7 +17,7 @@ package chap08;
 import java.io.*;
 
 /**
- * @author ±â¼ú´ëÇĞ¿ø
+ * @author ê¸°ìˆ ëŒ€í•™ì›
  *
  */
 public class ExceptionTest {
@@ -32,7 +32,7 @@ public class ExceptionTest {
         try {
             methodB();
         } catch ( RuntimeException e ) {
-            System.out.println( "main()¿¡¼­ Ã³¸®" );
+            System.out.println( "main()ì—ì„œ ì²˜ë¦¬" );
         }
     }
     
@@ -40,12 +40,12 @@ public class ExceptionTest {
          try{
              throw new FileNotFoundException();
          } catch ( FileNotFoundException e ) {
-             System.out.println( "FileNotFoundException ¹ß»ı!!" );
+             System.out.println( "FileNotFoundException ë°œìƒ!!" );
          } catch ( IOException e ) {
-             System.out.println( "IOException ¹ß»ı!!" );  
+             System.out.println( "IOException ë°œìƒ!!" );  
              e.printStackTrace();
          } finally {
-             System.out.println( "Finally ÀÔ´Ï´Ù!!" );
+             System.out.println( "Finally ì…ë‹ˆë‹¤!!" );
          }
         
      }

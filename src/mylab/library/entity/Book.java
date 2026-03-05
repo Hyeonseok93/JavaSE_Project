@@ -1,4 +1,4 @@
-package mylab.library.entity;
+ï»¿package mylab.library.entity;
 
 public class Book {
 
@@ -49,9 +49,7 @@ public class Book {
 
     @Override
     public String toString() {
-        String availableStatus = isAvailable ? "°¡´É" : "´ëÃâ Áß";
-        return "Ã¥ Á¦¸ñ: " + title + "\n" +
-               "ÀúÀÚ: " + author + "\n" +
-               "ISBN: " + isbn + " ÃâÆÇ³âµµ: " + publishYear + " ´ëÃâ °¡´É ¿©ºÎ: " + availableStatus;
+        String availableStatus = isAvailable ? "ê°€ëŠ¥" : "ëŒ€ì¶œ ì¤‘";
+        return "ì±… ì œëª©: " + title + " " + "ì €ì: " + author + " " + "ISBN: " + isbn + " ì¶œíŒë…„ë„: " + publishYear + " ëŒ€ì¶œ ê°€ëŠ¥ ì—¬ë¶€: " + availableStatus;
     }
 }

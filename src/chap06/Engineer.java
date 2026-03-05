@@ -1,4 +1,4 @@
-package chap06;
+ï»¿package chap06;
 
 public class Engineer extends Employee{
     private String skill;
@@ -25,7 +25,7 @@ public class Engineer extends Employee{
     
     public void displayInfo(){
         super.displayInfo();
-        System.out.println( "°ü¸®ºÎ¼­" + getSkill() );        
+        System.out.println( "ê´€ë¦¬ë¶€ì„œ" + getSkill() );        
     } 
 
 }

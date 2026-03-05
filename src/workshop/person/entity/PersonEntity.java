@@ -1,4 +1,4 @@
-package workshop.person.entity;
+﻿package workshop.person.entity;
 
 public class PersonEntity {
 	private String name;
@@ -73,3 +73,4 @@ public class PersonEntity {
 	}	
 	
 }
+

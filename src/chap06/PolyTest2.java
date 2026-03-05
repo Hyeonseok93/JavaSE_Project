@@ -1,4 +1,4 @@
-package chap06;
+Ôªøpackage chap06;
 
 public class PolyTest2 {
     public static void main( String[] args ){
@@ -11,7 +11,7 @@ public class PolyTest2 {
         Employee[] employees = new Employee[3];
         
         employees[0] = new Employee( "Kim" , 2000 );
-        employees[1] = new Manager( "Lee" , 5000 , "√—π´" );
+        employees[1] = new Manager( "Lee" , 5000 , "Ï¥ùÎ¨¥" );
         employees[2] = new Engineer( "Yoo" , 3000,  "Java " );
         
         for( int inx = 0; inx < employees.length; inx++ ){
@@ -34,7 +34,7 @@ public class PolyTest2 {
             tax = e.getSalary() * 0.30;
              
             Manager m = (Manager)e;
-            if( m.getDepartment().equals("√—π´")){
+            if( m.getDepartment().equals("Ï¥ùÎ¨¥")){
                 tax = m.getSalary() * 0.50;
             }
         }else if( e instanceof Engineer ){

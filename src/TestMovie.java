@@ -1,10 +1,10 @@
-public class TestMovie {
+ï»¿public class TestMovie {
 	public static void main( String[] args ) {
     	   Movie m1 = new Movie();
-          m1.setTitle( "Å·Äá2" );
+          m1.setTitle( "í‚¹ì½©2" );
           m1.playMovie() ;
           String title = m1.getTitle();
-          System.out.println( "¿µÈ­ Á¦¸ñÀº " + 
-                                      title + "ÀÔ´Ï´Ù.");
+          System.out.println( "ì˜í™” ì œëª©ì€ " + 
+                                      title + "ì…ë‹ˆë‹¤.");
     }
 }

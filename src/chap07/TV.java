@@ -1,4 +1,4 @@
-
+ï»¿
 package chap07;
 
 public class TV extends Appliance {
@@ -7,11 +7,11 @@ public class TV extends Appliance {
         super( modelNo );
     } 
     public void volumeUp() {
-        System.out.println( "TV º¼·ë¾÷" );
+        System.out.println( "TV ë³¼ë£¸ì—…" );
     }
 
     public void volumeDown() {
-        System.out.println( "TV º¼·ë´Ù¿î" );
+        System.out.println( "TV ë³¼ë£¸ë‹¤ìš´" );
     } 
   
 }

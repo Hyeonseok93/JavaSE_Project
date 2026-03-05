@@ -1,4 +1,4 @@
-package chap02;
+ï»¿package chap02;
 
 public class MyDate{
     private int day = 1;
@@ -27,7 +27,7 @@ public class MyDate{
     }
 
 	/**
-	  * dayÀÇ °ªÀ» setting ÇØÁÖ´Â method
+	  * dayì˜ ê°’ì„ setting í•´ì£¼ëŠ” method
 	  */
     public void setDay( int newDay ){
     	day = newDay;

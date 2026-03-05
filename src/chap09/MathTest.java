@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+ï»¿/*------------------------------------------------------------------------------
  * Name : MathTest
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   º¯        °æ        »ç        Ç×
+ *                   ë³€        ê²½        ì‚¬        í•­
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 8. 4.  ±â¼ú´ëÇĞ¿ø  ver1.0 ÀÛ¼º
+ * 2006. 8. 4.  ê¸°ìˆ ëŒ€í•™ì›  ver1.0 ì‘ì„±
  *----------------------------------------------------------------------------*/
 package chap09;
 
@@ -17,12 +17,12 @@ public class MathTest {
 
     public static void main( String[] args ) {
         
-        System.out.println( "¿Ã¸²( 5.7 ) : "  + Math.ceil( 5.7 ) );
-        System.out.println( "³»¸²( 5.7 ) : "  + Math.floor( 5.7 ) );
-        System.out.println( "¹İ¿Ã¸²( 5.7 ) : "  + Math.round( 5.7 ) );
-        System.out.println( "ÃÖ¼Ò°ª( 3, 5 ) : "  + Math.min( 3, 5 ) );
-        System.out.println( "ÃÖ´ë°ª( 3, 5 ) : " + Math.max( 3, 5 ) );
-        System.out.println( "Á¦°ö±Ù( 4 ) : " + Math.sqrt( 4 ) );
+        System.out.println( "ì˜¬ë¦¼( 5.7 ) : "  + Math.ceil( 5.7 ) );
+        System.out.println( "ë‚´ë¦¼( 5.7 ) : "  + Math.floor( 5.7 ) );
+        System.out.println( "ë°˜ì˜¬ë¦¼( 5.7 ) : "  + Math.round( 5.7 ) );
+        System.out.println( "ìµœì†Œê°’( 3, 5 ) : "  + Math.min( 3, 5 ) );
+        System.out.println( "ìµœëŒ€ê°’( 3, 5 ) : " + Math.max( 3, 5 ) );
+        System.out.println( "ì œê³±ê·¼( 4 ) : " + Math.sqrt( 4 ) );
         System.out.println( "Random : " + Math.random() );
         
     }

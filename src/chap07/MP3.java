@@ -1,4 +1,4 @@
-package chap07;
+ï»¿package chap07;
 
 public class MP3 extends Appliance implements Recording{
     
@@ -7,14 +7,14 @@ public class MP3 extends Appliance implements Recording{
     }
 
     public void volumeUp() {
-        System.out.println( "MP3 º¼·ë¾÷" );
+        System.out.println( "MP3 ë³¼ë£¸ì—…" );
     }
  
     public void volumeDown() {
-        System.out.println( "MP3 º¼·ë´Ù¿î" );
+        System.out.println( "MP3 ë³¼ë£¸ë‹¤ìš´" );
     }
 
-    //interface ½Ç½ÀÀ» À§ÇØ »ç¿ë 
+    //interface ì‹¤ìŠµì„ ìœ„í•´ ì‚¬ìš© 
     public void startRecord() {
         System.out.println( START_MSG );
     }

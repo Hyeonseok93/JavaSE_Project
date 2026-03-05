@@ -1,4 +1,4 @@
-package chap07;
+﻿package chap07;
 
 abstract public class Appliance {
     private String modelNo;

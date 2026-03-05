@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+ï»¿/*------------------------------------------------------------------------------
  * Name : TestOverriding
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   º¯        °æ        »ç        Ç×
+ *                   ë³€        ê²½        ì‚¬        í•­
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 8. 4.  ±â¼ú´ëÇĞ¿ø  ver1.0 ÀÛ¼º
+ * 2006. 8. 4.  ê¸°ìˆ ëŒ€í•™ì›  ver1.0 ì‘ì„±
  *----------------------------------------------------------------------------*/
 
 package chap08;
@@ -17,7 +17,7 @@ package chap08;
 import java.io.IOException;
 
 /**
- * @author ±â¼ú´ëÇĞ¿ø 
+ * @author ê¸°ìˆ ëŒ€í•™ì› 
  *
  */
 public class TestOverriding {
@@ -30,8 +30,8 @@ public class TestOverriding {
         SuperClass superClass = new SubClass();
 
         try {
-            superClass.method(); //ÀÚ½ÄÅ¬·¡½ºÀÇ Exception ¹ß»ı
-        } catch ( IOException ioe ) { // ExceptionÀ» ÀâÀ» ¼ö ¾ø´Ù.
+            superClass.method(); //ìì‹í´ë˜ìŠ¤ì˜ Exception ë°œìƒ
+        } catch ( IOException ioe ) { // Exceptionì„ ì¡ì„ ìˆ˜ ì—†ë‹¤.
             System.out.println( "IOException occured!") ;
         }
    

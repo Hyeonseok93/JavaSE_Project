@@ -1,4 +1,4 @@
-
+ï»¿
 package chap07;
 
 public class Radio extends Appliance {
@@ -7,11 +7,11 @@ public class Radio extends Appliance {
         super( modelNo );
     }
     public void volumeUp() {
-        System.out.println( "¶óµğ¿À º¼·ë¾÷" );
+        System.out.println( "ë¼ë””ì˜¤ ë³¼ë£¸ì—…" );
     }  
 
     public void volumeDown() {
-        System.out.println( "¶óµğ¿À º¼·ë´Ù¿î" );
+        System.out.println( "ë¼ë””ì˜¤ ë³¼ë£¸ë‹¤ìš´" );
     }
  
 } 

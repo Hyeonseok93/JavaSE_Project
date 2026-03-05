@@ -1,4 +1,4 @@
-package chap04;
+Ôªøpackage chap04;
 
 public class TestString {
  
@@ -8,11 +8,11 @@ public class TestString {
 		String s2 = "LG CNS";
 		String s3 = new String( "LG CNS" );
 		
-		System.out.println( "1. == ∫Ò±≥" ); 
+		System.out.println( "1. == ÎπÑÍµê" ); 
 		System.out.println( s1 == s2 ); 
 		System.out.println( s1 == s3 ); 
 
-		System.out.println( "2. equals ∫Ò±≥" ); 
+		System.out.println( "2. equals ÎπÑÍµê" ); 
 		System.out.println( s1.equals(s2) ); 
 		System.out.println( s1.equals(s3)  );
 	} 

@@ -1,4 +1,4 @@
-package mylab.bank.entity;
+ï»¿package mylab.bank.entity;
 
 import mylab.bank.exception.InsufficientBalanceException;
 
@@ -20,13 +20,13 @@ public abstract class Account {
 
     public void deposit(double amount) {
         this.balance += amount;
-        System.out.println(amount + "¿øÀÌ ÀÔ±İµÇ¾ú½À´Ï´Ù. ÇöÀç ÀÜ¾×: " + this.balance + "¿ø");
+        System.out.println(amount + "ì›ì´ ì…ê¸ˆë˜ì—ˆìŠµë‹ˆë‹¤. í˜„ì¬ ì”ì•¡: " + this.balance + "ì›");
     }
 
     public abstract void withdraw(double amount) throws InsufficientBalanceException;
 
     @Override
     public String toString() {
-        return "°èÁÂ¹øÈ£: " + accountNumber + ", ¼ÒÀ¯ÀÚ: " + ownerName + ", ÀÜ¾×: " + balance + "¿ø";
+        return "ê³„ì¢Œë²ˆí˜¸: " + accountNumber + ", ì†Œìœ ì: " + ownerName + ", ì”ì•¡: " + balance + "ì›";
     }
 }

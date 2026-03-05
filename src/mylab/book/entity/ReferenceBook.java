@@ -1,4 +1,4 @@
-package mylab.book.entity;
+ï»¿package mylab.book.entity;
 
 public class ReferenceBook extends Publication {
     private String field;
@@ -10,7 +10,7 @@ public class ReferenceBook extends Publication {
 
     @Override
     public String toString() {
-        return super.toString() + " [Âü°í¼­] ºĞ¾ß: " + field + ", " 
-                + getPage() + "ÂÊ, " + getPrice() + "¿ø, ÃâÆÇÀÏ: " + getPublishDate();
+        return super.toString() + " [ì°¸ê³ ì„œ] ë¶„ì•¼: " + field + ", " 
+                + getPage() + "ìª½, " + getPrice() + "ì›, ì¶œíŒì¼: " + getPublishDate();
     }
 }

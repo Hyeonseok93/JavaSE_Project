@@ -1,4 +1,4 @@
-package workshop.animal.entity;
+ï»¿package workshop.animal.entity;
 
 public class Cat extends Animal implements Pet{
 	private String name;
@@ -23,12 +23,12 @@ public class Cat extends Animal implements Pet{
 	
 	@Override
 	public void play() {
-		System.out.println("°í¾çÀÌ´Â ÀåÈ­¸¦ ½Å°í ³î¾Æ¿ä!");
+		System.out.println("ê³ ì–‘ì´ëŠ” ì¥í™”ë¥¼ ì‹ ê³  ë†€ì•„ìš”!");
 		
 	}
 	@Override
 	public void eat() {
-		System.out.println("°í¾çÀÌ´Â »ı¼±À» ¸Ô¾î¿ä!");		
+		System.out.println("ê³ ì–‘ì´ëŠ” ìƒì„ ì„ ë¨¹ì–´ìš”!");		
 	}
 	
 	

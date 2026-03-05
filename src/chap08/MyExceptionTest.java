@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+Ôªø/*------------------------------------------------------------------------------
  * Name : MyExceptionTest
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   ∫Ø        ∞Ê        ªÁ        «◊
+ *                   Î≥Ä        Í≤Ω        ÏÇ¨        Ìï≠
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 8. 4.  ±‚º˙¥Î«–ø¯  ver1.0 ¿€º∫
+ * 2006. 8. 4.  Í∏∞Ïà†ÎåÄÌïôÏõê  ver1.0 ÏûëÏÑ±
  *----------------------------------------------------------------------------*/
  
 package chap08;
@@ -20,15 +20,15 @@ public class MyExceptionTest extends Exception{
         
         try{
             if ( age < 19 ){
-                throw new MyException( "¿‘¿Â∫“∞°." );
+                throw new MyException( "ÏûÖÏû•Î∂àÍ∞Ä." );
                         
             }else{
-                System.out.println( "¡Ò∞Ã∞‘ ∞®ªÛ«œººø‰~" );
+                System.out.println( "Ï¶êÍ≤ÅÍ≤å Í∞êÏÉÅÌïòÏÑ∏Ïöî~" );
             }  
         } catch( MyException me ){
-            System.out.println( "MyException πﬂª˝ : " + me );
+            System.out.println( "MyException Î∞úÏÉù : " + me );
         } finally{
-            System.out.println( "≥°~" );
+            System.out.println( "ÎÅù~" );
         }
     }
 }

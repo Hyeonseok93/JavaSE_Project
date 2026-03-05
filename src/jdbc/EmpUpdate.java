@@ -1,4 +1,4 @@
-package jdbc;
+ï»¿package jdbc;
 
 import java.sql.*;
 
@@ -12,28 +12,28 @@ public class EmpUpdate {
         int updateCount = 0;
 
 
-        // Driver µî·Ï
+        // Driver ë“±ë¡
         Class.forName( "oracle.jdbc.driver.OracleDriver" );
 
         // DB Connection
         conn = DriverManager.getConnection( url, "SE17###", "SE17###" );
         
-        // Auto Commit ÀÌ µÇÁö ¾Êµµ·Ï ¼³Á¤ÇÑ´Ù.Áï. commit()À» È£ÃâÇØ¾ß¸¸ Ä¿¹Ô.
+        // Auto Commit ì´ ë˜ì§€ ì•Šë„ë¡ ì„¤ì •í•œë‹¤.ì¦‰. commit()ì„ í˜¸ì¶œí•´ì•¼ë§Œ ì»¤ë°‹.
         conn.setAutoCommit( false );
 
-        // Statement»ı¼º
+        // Statementìƒì„±
         stmt = conn.createStatement();
         
         String empName = "HITE" ;
         String empId = "10004";
         
-         // Query Àü¼Û/½ÇÇà
+         // Query ì „ì†¡/ì‹¤í–‰
         query = "UPDATE EMP  " + 
                  "   SET LAST_NAME  =  '" + empName + "'"+ 
                  " WHERE  ID =  '" + empId + "'";  
         System.out.println( query );
         updateCount = stmt.executeUpdate(query);
-        System.out.println( "¾÷µ¥ÀÌÆ®µÈ ÇàÀÇ °¹¼ö : " + updateCount );
+        System.out.println( "ì—…ë°ì´íŠ¸ëœ í–‰ì˜ ê°¯ìˆ˜ : " + updateCount );
 
         conn.commit();// cf) conn.rollback();
         stmt.close();

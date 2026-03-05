@@ -1,4 +1,4 @@
-package mylab.bank.control;
+ï»¿package mylab.bank.control;
 
 import mylab.bank.entity.*;
 import mylab.bank.exception.*;
@@ -12,51 +12,85 @@ public class BankDemo {
     public void run() {
         Bank bank = new Bank();
 
-        System.out.println("=== °èÁÂ »ı¼º ===");
-        bank.createSavingsAccount("È«±æµ¿", 10000.0, 3.0);
-        bank.createCheckingAccount("±èÃ¶¼ö", 20000.0, 5000.0);
-        bank.createSavingsAccount("ÀÌ¿µÈñ", 30000.0, 2.0);
+        System.out.println("=== ê³„ì¢Œ ìƒì„± ===");
+        bank.createSavingsAccount("í™ê¸¸ë™", 10000.0, 3.0);
+        bank.createCheckingAccount("ê¹€ì² ìˆ˜", 20000.0, 5000.0);
+        bank.createSavingsAccount("ì´ì˜í¬", 30000.0, 2.0);
 
-        System.out.println("\n=== ¸ğµç °èÁÂ ¸ñ·Ï ===");
+        System.out.println("\n=== ëª¨ë“  ê³„ì¢Œ ëª©ë¡ ===");
         bank.showAllAccounts();
         System.out.println("===================\n");
 
+        System.out.println("=== ì…ê¸ˆ/ì¶œê¸ˆ í…ŒìŠ¤íŠ¸ ===");
+        executeDeposit(bank, "AC1000", 5000.0);
+        executeWithdraw(bank, "AC1001", 3000.0);
+        
+        System.out.println("\n=== ì´ì ì ìš© í…ŒìŠ¤íŠ¸ ===");
+        executeApplyInterest(bank, "AC1000");
+
+        System.out.println("\n=== ê³„ì¢Œ ì´ì²´ í…ŒìŠ¤íŠ¸ ===");
+        executeTransfer(bank, "AC1002", "AC1001", 5000.0);
+        
+        System.out.println("\n=== ëª¨ë“  ê³„ì¢Œ ëª©ë¡ ===");
+        bank.showAllAccounts();
+        System.out.println("===================");
+
+        System.out.println("\n=== ì˜ˆì™¸ ë°œìƒ í…ŒìŠ¤íŠ¸ ===");
+        executeWithdraw(bank, "AC1001", 10000.0);
+        executeWithdraw(bank, "AC1001", 20000.0);
+        executeFindAccount(bank, "AC9999"); 
+    }
+
+    private void executeWithdraw(Bank bank, String accNo, double amount) {
         try {
-            System.out.println("=== ÀÔ±İ/Ãâ±İ Å×½ºÆ® ===");
-            bank.deposit("AC1000", 5000.0);
-            bank.withdraw("AC1001", 3000.0);
-            
-            System.out.println("\n=== ÀÌÀÚ Àû¿ë Å×½ºÆ® ===");
-            Account acc = bank.findAccount("AC1000");
+            bank.withdraw(accNo, amount);
+        } catch (WithdrawalLimitExceededException e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        } catch (InsufficientBalanceException e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        } catch (AccountNotFoundException e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        }
+    }
+
+    private void executeDeposit(Bank bank, String accNo, double amount) {
+        try {
+            bank.deposit(accNo, amount);
+        } catch (AccountNotFoundException e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        }
+    }
+
+    private void executeTransfer(Bank bank, String from, String to, double amount) {
+        try {
+            bank.transfer(from, to, amount);
+        } catch (InsufficientBalanceException | AccountNotFoundException e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
+        }
+    }
+
+    private void executeApplyInterest(Bank bank, String accNo) {
+        try {
+            Account acc = bank.findAccount(accNo);
             if (acc instanceof SavingsAccount) {
                 ((SavingsAccount) acc).applyInterest();
             }
-
-            System.out.println("\n=== °èÁÂ ÀÌÃ¼ Å×½ºÆ® ===");
-            bank.transfer("AC1002", "AC1001", 5000.0);
-            
-            System.out.println("\n=== ¸ğµç °èÁÂ ¸ñ·Ï ===");
-            bank.showAllAccounts();
-            System.out.println("===================");
-
-            System.out.println("\n=== ¿¹¿Ü ¹ß»ı Å×½ºÆ® ===");
-            // Áßº¹µÈ ÇÑµµ ÃÊ°ú Å×½ºÆ®´Â Sample Run¿¡ ¸ÂÃç 2¹ø ¼öÇàÇÒ ¼ö ÀÖ½À´Ï´Ù.
-            bank.withdraw("AC1001", 10000.0); 
-            
         } catch (Exception e) {
-            System.out.println("¿¹¿Ü ¹ß»ı: " + e.getMessage());
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
         }
+    }
 
+    private void executeFindAccount(Bank bank, String accNo) {
         try {
-            bank.withdraw("AC1001", 10000.0); 
-        } catch (Exception e) {
-            System.out.println("¿¹¿Ü ¹ß»ı: " + e.getMessage());
-        }
-
-        try {
-            bank.findAccount("AC9999");
+            bank.findAccount(accNo);
         } catch (AccountNotFoundException e) {
-            System.out.println("¿¹¿Ü ¹ß»ı: " + e.getMessage());
+            System.out.println("ì˜ˆì™¸ ë°œìƒ: " + e.getMessage());
         }
     }
 }

@@ -1,4 +1,4 @@
-package chap10;
+ï»¿package chap10;
 
 import java.io.*;
 
@@ -15,20 +15,20 @@ public class ReadSerializeTest {
            EmpInfo[] readList = (EmpInfo[])empInputStream.readObject();
 
             for ( int inx = 0; inx < readList.length; inx++ ){
-                System.out.println( "»ç¹ø : " + readList[inx].getEmpId() +
-                                    " ÀÌ¸§ : " + readList[inx].getName());
+                System.out.println( "ì‚¬ë²ˆ : " + readList[inx].getEmpId() +
+                                    " ì´ë¦„ : " + readList[inx].getName());
             }
                  
-        //°´Ã¼¸¦ ÇÏ³ªÇÏ³ª ÀÐ´Â °Íµµ °¡´É    
+        //ê°ì²´ë¥¼ í•˜ë‚˜í•˜ë‚˜ ì½ëŠ” ê²ƒë„ ê°€ëŠ¥    
 /*            
             EmpInfo emp = (EmpInfo)empInputStream.readObject();
             EmpInfo emp2 = (EmpInfo)empInputStream.readObject();
    
             
-            System.out.println( "»ç¹ø : " + emp.getEmpId() +
-                    " ÀÌ¸§ : " + emp.getName());
-            System.out.println( "»ç¹ø : " + emp2.getEmpId() +
-                    " ÀÌ¸§ : " + emp2.getName());
+            System.out.println( "ì‚¬ë²ˆ : " + emp.getEmpId() +
+                    " ì´ë¦„ : " + emp.getName());
+            System.out.println( "ì‚¬ë²ˆ : " + emp2.getEmpId() +
+                    " ì´ë¦„ : " + emp2.getName());
 */
         } catch ( ClassNotFoundException e ) {
             e.printStackTrace();

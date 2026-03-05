@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+ï»¿/*------------------------------------------------------------------------------
  * Name : TestString
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   º¯        °æ        »ç        Ç×
+ *                   ë³€        ê²½        ì‚¬        í•­
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 8. 4.  ±â¼ú´ëÇĞ¿ø  ver1.0 ÀÛ¼º
+ * 2006. 8. 4.  ê¸°ìˆ ëŒ€í•™ì›  ver1.0 ì‘ì„±
  *----------------------------------------------------------------------------*/
 package chap09;
 
@@ -36,21 +36,21 @@ public class TestString {
         String str2 = "ABC";
         
         if( str1.equals( str2 )){
-            System.out.println( "equals test : str1°ú st2´Â °°Àº stringÀÔ´Ï´Ù." );
+            System.out.println( "equals test : str1ê³¼ st2ëŠ” ê°™ì€ stringì…ë‹ˆë‹¤." );
         }else{
-            System.out.println( "equals test : str1°ú st2´Â ´Ù¸¥ stringÀÔ´Ï´Ù." );            
+            System.out.println( "equals test : str1ê³¼ st2ëŠ” ë‹¤ë¥¸ stringì…ë‹ˆë‹¤." );            
         }
 
         if( str1.equalsIgnoreCase( str2 )){
-            System.out.println( "equalsIgnoreCase test : str1°ú st2´Â °°Àº stringÀÔ´Ï´Ù." );
+            System.out.println( "equalsIgnoreCase test : str1ê³¼ st2ëŠ” ê°™ì€ stringì…ë‹ˆë‹¤." );
         }else{
-            System.out.println( "equalsIgnoreCase test : str1°ú st2´Â ´Ù¸¥ stringÀÔ´Ï´Ù." );            
+            System.out.println( "equalsIgnoreCase test : str1ê³¼ st2ëŠ” ë‹¤ë¥¸ stringì…ë‹ˆë‹¤." );            
         }
 
         if( str1.compareTo( str2 ) < 0 ){
-            System.out.println( "compareTo test : str1´Â st2º¸´Ù ¹®ÀÚ ¼ø¼­°¡ ºü¸¨´Ï´Ù." );
+            System.out.println( "compareTo test : str1ëŠ” st2ë³´ë‹¤ ë¬¸ì ìˆœì„œê°€ ë¹ ë¦…ë‹ˆë‹¤." );
         }else{
-            System.out.println( "compareTo test : str1´Â st2º¸´Ù ¹®ÀÚ ¼ø¼­°¡ ºü¸£Áö ¾Ê½À´Ï´Ù." );            
+            System.out.println( "compareTo test : str1ëŠ” st2ë³´ë‹¤ ë¬¸ì ìˆœì„œê°€ ë¹ ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤." );            
         }
        
     }

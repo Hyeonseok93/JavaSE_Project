@@ -1,6 +1,7 @@
-package workshop.book.entity;
+﻿package workshop.book.entity;
 
-public class Publication {
+//출판물
+public class Publication extends Object {
 	private String title;
 	private String publishingDate;
 	private int page;

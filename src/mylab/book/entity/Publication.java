@@ -1,4 +1,4 @@
-package mylab.book.entity;
+﻿package mylab.book.entity;
 
 public class Publication {
     private String title;
@@ -15,11 +15,25 @@ public class Publication {
         this.price = price;
     }
 
-    public String getTitle() { return title; }
-    public String getPublishDate() { return publishDate; }
-    public int getPage() { return page; }
-    public int getPrice() { return price; }
-    public void setPrice(int price) { this.price = price; }
+    public String getTitle() { 
+    	return title;
+    }
+    
+    public String getPublishDate() { 
+    	return publishDate;
+    }
+    
+    public int getPage() { 
+    	return page;
+    }
+    
+    public int getPrice() {
+    	return price;
+    }
+    
+    public void setPrice(int price) { 
+    	this.price = price;
+    }
 
     @Override
     public String toString() {

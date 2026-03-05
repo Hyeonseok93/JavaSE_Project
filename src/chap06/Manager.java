@@ -1,4 +1,4 @@
-
+ï»¿
 package chap06;
 
 public class Manager extends Employee{
@@ -33,11 +33,11 @@ public class Manager extends Employee{
               "\nManager of: " + department;
    }
      
-    //Polymorphism ½Ç½ÀÀ» À§ÇÏ¿©  Ãß°¡ 
+    //Polymorphism ì‹¤ìŠµì„ ìœ„í•˜ì—¬  ì¶”ê°€ 
     public void displayInfo(){
-        System.out.println( "ÀÌ¸§" + getName() );
-        System.out.println( "¿¬ºÀ" + getSalary() );
-        System.out.println( "°ü¸®ºÎ¼­" + getDepartment() );        
+        System.out.println( "ì´ë¦„" + getName() );
+        System.out.println( "ì—°ë´‰" + getSalary() );
+        System.out.println( "ê´€ë¦¬ë¶€ì„œ" + getDepartment() );        
     }
 
 }

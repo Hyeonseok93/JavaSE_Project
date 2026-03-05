@@ -1,9 +1,9 @@
-package mylab.student.exception;
+ï»¿package mylab.student.exception;
 
 public class InvalidGradeException extends Exception {   
     private static final long serialVersionUID = 1L;
 
     public InvalidGradeException() {
-        super("ÇĞ³âÀº 1~4 »çÀÌ¿©¾ß ÇÕ´Ï´Ù."); 
+        super("í•™ë…„ì€ 1~4 ì‚¬ì´ì—¬ì•¼ í•©ë‹ˆë‹¤."); 
     }
 }

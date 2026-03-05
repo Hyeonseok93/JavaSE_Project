@@ -1,4 +1,4 @@
-package mylab.bank.entity;
+ï»¿package mylab.bank.entity;
 
 import mylab.bank.exception.InsufficientBalanceException;
 import mylab.bank.exception.WithdrawalLimitExceededException;
@@ -14,17 +14,17 @@ public class CheckingAccount extends Account {
     @Override
     public void withdraw(double amount) throws InsufficientBalanceException {
         if (amount > withdrawalLimit) {
-            throw new WithdrawalLimitExceededException("Ãâ±İ ÇÑµµ¸¦ ÃÊ°úÇß½À´Ï´Ù. ÇÑµµ: " + withdrawalLimit + "¿ø");
+            throw new WithdrawalLimitExceededException("ì¶œê¸ˆ í•œë„ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. í•œë„: " + withdrawalLimit + "ì›");
         }
         if (amount > getBalance()) {
-            throw new InsufficientBalanceException("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+            throw new InsufficientBalanceException("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
         }
         setBalance(getBalance() - amount);
-        System.out.println(amount + "¿øÀÌ Ãâ±İµÇ¾ú½À´Ï´Ù. ÇöÀç ÀÜ¾×: " + getBalance() + "¿ø");
+        System.out.println(amount + "ì›ì´ ì¶œê¸ˆë˜ì—ˆìŠµë‹ˆë‹¤. í˜„ì¬ ì”ì•¡: " + getBalance() + "ì›");
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", Ãâ±İ ÇÑµµ: " + withdrawalLimit + "¿ø";
+        return super.toString() + ", ì¶œê¸ˆ í•œë„: " + withdrawalLimit + "ì›";
     }
 }

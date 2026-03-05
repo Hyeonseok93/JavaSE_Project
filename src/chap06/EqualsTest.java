@@ -1,4 +1,4 @@
-package chap06;
+ï»¿package chap06;
 
 public class EqualsTest {
     public static void main( String[] args ){
@@ -10,18 +10,18 @@ public class EqualsTest {
         Employee emp2 = new Employee( "KIM", 3000 );
          
         if( emp1.equals(emp2)){
-            System.out.println( "µ¿ÀÏÇÑ ÀÌ¸§ÀÇ ÀÓÁ÷¿ø ÀÔ´Ï´Ù." );
+            System.out.println( "ë™ì¼í•œ ì´ë¦„ì˜ ì„ì§ì› ì…ë‹ˆë‹¤." );
         }else{
-            System.out.println( "´Ù¸¥ ÀÌ¸§ÀÇ ÀÓÁ÷¿ø ÀÔ´Ï´Ù." );
+            System.out.println( "ë‹¤ë¥¸ ì´ë¦„ì˜ ì„ì§ì› ì…ë‹ˆë‹¤." );
         }
          
         MyDate date1 = new MyDate( 6, 9, 2006 );
         MyDate date2 = new MyDate( 6, 9, 2006 );
 
         if ( date1.equals(date2) ){
-            System.out.println("µ¿ÀÏÇÑ ³¯Â¥ÀÔ´Ï´Ù.");
+            System.out.println("ë™ì¼í•œ ë‚ ì§œì…ë‹ˆë‹¤.");
         }else{
-            System.out.println("´Ù¸¥ ³¯Â¥ÀÔ´Ï´Ù.");
+            System.out.println("ë‹¤ë¥¸ ë‚ ì§œì…ë‹ˆë‹¤.");
         }
         
         System.out.println( "===================" );   

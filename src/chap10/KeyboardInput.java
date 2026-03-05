@@ -1,4 +1,4 @@
-package chap10;
+ï»¿package chap10;
 
 import java.io.*;
 
@@ -10,7 +10,7 @@ public class KeyboardInput {
         InputStreamReader ir = new InputStreamReader( System.in );
         BufferedReader in = new BufferedReader( ir );
 
-        System.out.println( "Type ¡®exit¡¯ to exit." );
+        System.out.println( "Type â€˜exitâ€™ to exit." );
 
         try {
             while ( !(s = in.readLine()).equals( "exit" ) ) {

@@ -1,4 +1,4 @@
-package workshop.animal.entity;
+ï»¿package workshop.animal.entity;
 
 public class Spider extends Animal{
 	public Spider() {
@@ -8,6 +8,6 @@ public class Spider extends Animal{
 	
 	@Override
 	public void eat() {
-		System.out.println("Spider´Â ÀÛÀº ¹ú·¹¸¦ ¸Ô¾î¿ä!!");		
+		System.out.println("SpiderëŠ” ì‘ì€ ë²Œë ˆë¥¼ ë¨¹ì–´ìš”!!");		
 	}
 }

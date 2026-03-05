@@ -1,15 +1,15 @@
-/*------------------------------------------------------------------------------
+ï»¿/*------------------------------------------------------------------------------
  * Name : InteratorTest
  * DESC : 
  * VER  : 1.0
  * PROJ : VCC SE Path
  * Copyright 2006 LG CNS All rights reserved
  *------------------------------------------------------------------------------
- *                   º¯        °æ        »ç        Ç×
+ *                   ë³€        ê²½        ì‚¬        í•­
  *------------------------------------------------------------------------------
  *     DATE      AUTHOR                       DESCRIPTION
  *-------------  --------  ----------------------------------------------------- 
- * 2006. 8. 4.  ±â¼ú´ëÇĞ¿ø  ver1.0 ÀÛ¼º
+ * 2006. 8. 4.  ê¸°ìˆ ëŒ€í•™ì›  ver1.0 ì‘ì„±
  *----------------------------------------------------------------------------*/
 package chap09;
 
@@ -26,7 +26,7 @@ public class InteratorTest{
         list.add( new Integer( 4 ) );
         list.add( new Float( 5.0F ) );
 
-        System.out.println( "ListÀÇ ³»¿ë(iterator) " );
+        System.out.println( "Listì˜ ë‚´ìš©(iterator) " );
  
         Iterator it = list.iterator();
 
@@ -34,7 +34,7 @@ public class InteratorTest{
             System.out.println( it.next() );
         }
 
-        System.out.println( "ListÀÇ ³»¿ë(listIterator)" );
+        System.out.println( "Listì˜ ë‚´ìš©(listIterator)" );
         
         ListIterator listIt = list.listIterator();
 

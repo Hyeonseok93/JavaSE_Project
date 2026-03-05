@@ -1,7 +1,7 @@
-public class Movie {
-    public String title = "Å·Äá";
-    public String director = "ÇÇÅÍ Àè½¼";
-    public String starring = "³ª¿À¹Ì ¿ÓÃ÷";
+ï»¿public class Movie {
+    public String title = "í‚¹ì½©";
+    public String director = "í”¼í„° ì­ìŠ¨";
+    public String starring = "ë‚˜ì˜¤ë¯¸ ì™“ì¸ ";
     public int rating = 15;
 
     public void setTitle( String newTitle ) {
@@ -14,7 +14,7 @@ public class Movie {
 
     public void playMovie() {
          System.out.println( title +
-                                     "¸¦ »ó¿µÇÕ´Ï´Ù.");
+                                     "ë¥¼ ìƒì˜í•©ë‹ˆë‹¤.");
     }
 
 }

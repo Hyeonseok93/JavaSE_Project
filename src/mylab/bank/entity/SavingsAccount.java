@@ -1,4 +1,4 @@
-package mylab.bank.entity;
+ï»¿package mylab.bank.entity;
 
 import mylab.bank.exception.InsufficientBalanceException;
 
@@ -12,22 +12,22 @@ public class SavingsAccount extends Account {
 
     public void applyInterest() {
         double interest = getBalance() * (interestRate / 100);
-        // deposit()À» È£ÃâÇÏ¸é ÀÔ±İ ¸Ş½ÃÁö°¡ ¸ÕÀú Ãâ·ÂµË´Ï´Ù.
+        // deposit()ì„ í˜¸ì¶œí•˜ë©´ ì…ê¸ˆ ë©”ì‹œì§€ê°€ ë¨¼ì € ì¶œë ¥ë©ë‹ˆë‹¤.
         deposit(interest);
-        System.out.println("ÀÌÀÚ " + interest + "¿øÀÌ Àû¿ëµÇ¾ú½À´Ï´Ù. ÇöÀç ÀÜ¾×: " + getBalance() + "¿ø");
+        System.out.println("ì´ì " + interest + "ì›ì´ ì ìš©ë˜ì—ˆìŠµë‹ˆë‹¤. í˜„ì¬ ì”ì•¡: " + getBalance() + "ì›");
     }
 
     @Override
     public void withdraw(double amount) throws InsufficientBalanceException {
         if (amount > getBalance()) {
-            throw new InsufficientBalanceException("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+            throw new InsufficientBalanceException("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
         }
         setBalance(getBalance() - amount);
-        System.out.println(amount + "¿øÀÌ Ãâ±İµÇ¾ú½À´Ï´Ù. ÇöÀç ÀÜ¾×: " + getBalance() + "¿ø");
+        System.out.println(amount + "ì›ì´ ì¶œê¸ˆë˜ì—ˆìŠµë‹ˆë‹¤. í˜„ì¬ ì”ì•¡: " + getBalance() + "ì›");
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", ÀÌÀÚÀ²: " + interestRate + "%";
+        return super.toString() + ", ì´ììœ¨: " + interestRate + "%";
     }
 }

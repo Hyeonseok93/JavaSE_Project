@@ -1,4 +1,4 @@
-package chap04;
+ï»¿package chap04;
 
 public class IfTest {
 
@@ -6,11 +6,11 @@ public class IfTest {
 
 		int distance = 9;
 		int fee = 0;
-	    String area = new String( "°æ±â" );
+	    String area = new String( "ê²½ê¸°" );
 	    
 		if( distance <= 10 ){
 			
-			if( area.equals( "°æ±â" ) ){
+			if( area.equals( "ê²½ê¸°" ) ){
 				fee = 1200;
 			}else{
 				fee = 800;
